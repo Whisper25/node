@@ -1,5 +1,7 @@
+import cowsay from 'cowsay';
 import Article from "./Article.mjs";
 import { mult } from "./math.mjs";
+console.log(cowsay.say({text:'muu'}));
 
 console.log('hi from node');
 const num1 = 5;
