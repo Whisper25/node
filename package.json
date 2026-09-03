@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Whisper25/node#readme",
   "dependencies": {
-    "cowsay": "^1.6.0"
+    "cowsay": "^1.6.0",
+    "figlet": "^1.11.4"
   }
 }

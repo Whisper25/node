@@ -1,14 +1,23 @@
-import cowsay from 'cowsay';
-import Article from "./Article.mjs";
-import { mult } from "./math.mjs";
-console.log(cowsay.say({text:'muu'}));
+import cowsay from "cowsay";
+import figlet from "figlet";
+// import Article from "./Article.mjs";
+import grade from "./grade.mjs";
+// import { mult } from "./math.mjs";
+console.log(grade(12));
 
-console.log('hi from node');
-const num1 = 5;
-const num2 = 8;
+console.log(cowsay.say({ text: "muu" }));
 
-console.log(num1+num2);
-console.log(mult(num1,num2));
+figlet
+  .text("Other")
+  .then((data) => console.log(data))
+  .catch((error) => console.log(error));
+figlet
+  .text("Figlet")
+  .then((data) => console.log(data))
+  .catch((error) => console.log(error));
+async function doStuff() {
+  const text = await figlet.text(grade(2));
+  console.log(text);
+}
 
-const newArticle = new Article('content');
-console.log(newArticle.render());
+doStuff();
